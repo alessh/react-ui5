@@ -1,9 +1,11 @@
-import React from 'react'
-
-export default React.createClass({
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-})
+export * from './sap/m/App'
+export * from './sap/m/Button'
+export * from './sap/m/Page'
+export * from './sap/m/Shell'
+export * from './sap/m/IconTabBar'
+export * from './sap/m/IconTabSeparator'
+export * from './sap/m/IconTabFilter'
+export * from './sap/m/Text'
+export * from './sap/m/ButtonType'
+export * from './sap/m/List'
+export * from './sap/m/ListItem'

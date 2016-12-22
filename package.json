@@ -1,7 +1,7 @@
 {
-  "name": "react-loading-button",
+  "name": "react-ui5",
   "version": "1.0.0",
-  "description": "react-loading-button React component",
+  "description": "A react based implementation of the SAP OpenUI5 framework",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
   "module": "es/index.js",
@@ -19,7 +19,10 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react-router": "^3.0.0"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
@@ -28,11 +31,14 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Alessandro Holanda",
+  "homepage": "http://www.github.com/alessh",
   "license": "MIT",
-  "repository": "",
+  "repository": "http://www.github.com/alessh/react-ui5.git",
   "keywords": [
-    "react-component"
+    "react",
+    "react-component",
+    "OpenUI5",
+    "SAP"
   ]
 }

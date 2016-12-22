@@ -1,15 +1,16 @@
 import React from 'react'
 import {render} from 'react-dom'
+import {Router, Route, hashHistory} from 'react-router'
+import {App, Shell} from '../../src'
+import Page1 from './Page1'
+import Page2 from './Page2'
 
-import Component from '../../src'
-
-let Demo = React.createClass({
-  render() {
-    return <div>
-      <h1>react-loading-button Demo</h1>
-      <Component/>
-    </div>
-  }
-})
-
-render(<Demo/>, document.querySelector('#demo'))
+render((
+  <Shell>
+    <Router history={hashHistory}>
+      <Route path="/" component={Page1} />
+      <Route path="/page2" component={Page2} />
+      <Route path="*" component={Page1} />
+    </Router>
+  </Shell>
+), document.querySelector('#demo'))

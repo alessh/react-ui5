@@ -1,5 +1,6 @@
 import React from 'react'
 import {Page, Button, ButtonType} from '../../src'
+import {Router, Route, hashHistory} from 'react-router'
 
 class Page1 extends React.Component {
   render() {

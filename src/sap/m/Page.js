@@ -1,6 +1,8 @@
 import React, {PropTypes} from 'react'
 import IconButton from './internal/IconButton'
 
+import sap from '../../';
+
 const Page = (props) => (
   <div className="sapMNavItem sapMPage sapMPageBgStandard sapMPageBusyCoversAll sapMPageWithHeader">
     <header className="sapMBar sapMBar-CTX sapMContent-CTX sapMHeader-CTX sapMIBar sapMIBar-CTX sapMPageHeader">
@@ -23,22 +25,25 @@ const Page = (props) => (
       </div>
       <div className="sapMBarContainer sapMBarRight" />
     </header>
-    <section style={{overflowX: 'hidden', overflowY: 'auto'}}>
+    <section>
       {props.children}
     </section>
   </div>
 )
 
 Page.propTypes = {
+  title: PropTypes.string,
+  //titleLevel: PropTypes.instanceOf(sap.ui.core.TitleLevel),
+  showNavButton: PropTypes.bool,
   children: PropTypes.node,
   navButtonPress: PropTypes.func,
-  showNavButton: PropTypes.bool,
-  title: PropTypes.string
 }
+
 Page.defaultProps = {
+  title: null,
+  //titleLevel: sap.ui.core.TitleLevel.Auto, // defaultValue: sap.ui.core.TitleLevel.Auto
+  showNavButton: false,
   children: null,
-  title: '',
-  showNavButton: false
 }
 
 export {Page}

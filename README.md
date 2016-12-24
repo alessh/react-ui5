@@ -1,4 +1,7 @@
-# React-UI5
+# React UI5
+A react based implementation of the OpenUI5 framework.
+
+![Sample](sample.gif)
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]

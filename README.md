@@ -1,4 +1,7 @@
 # React UI5
+
+[![NPM](https://nodei.co/npm/react-ui5.png)](https://nodei.co/npm/react-ui5/)
+
 A react based implementation of the OpenUI5 framework.
 
 ![Sample](sample.gif)

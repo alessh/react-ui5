@@ -11,4 +11,4 @@ class TitleLevel extends Component {
 	}
 }
 
-export { TitleLevel }
+export default TitleLevel

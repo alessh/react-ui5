@@ -41,7 +41,7 @@ Page.propTypes = {
 
 Page.defaultProps = {
   title: null,
-  //titleLevel: sap.ui.core.TitleLevel.Auto, // defaultValue: sap.ui.core.TitleLevel.Auto
+  titleLevel: sap.ui.core.TitleLevel.Auto,
   showNavButton: false,
   children: null,
 }

@@ -9,4 +9,4 @@ const ButtonType = {
   Up: 'Up'
 }
 
-export {ButtonType}
+export default ButtonType

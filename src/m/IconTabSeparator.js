@@ -4,4 +4,4 @@ const IconTabSeparator = () => (
   <div className='sapMITBItem sapMITBSep sapMITBSepLine' />
 )
 
-export {IconTabSeparator}
+export default IconTabSeparator

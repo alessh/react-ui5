@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react'
 import classnames from 'classnames'
-import {ButtonType} from './ButtonType'
+import ButtonType from './ButtonType'
 
 const isInverted = (type) => {
   switch (type) {
@@ -61,8 +61,9 @@ Button.propTypes = {
   type: PropTypes.string,
   children: PropTypes.string.isRequired
 }
+
 Button.defaultProps = {
   type: ButtonType.Default
 }
 
-export {Button}
+export default Button

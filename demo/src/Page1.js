@@ -1,11 +1,12 @@
 import React from 'react'
-import sap from '../../src'
 import {Router, Route, hashHistory} from 'react-router'
+
+import sap from '../../src'
 
 class Page1 extends React.Component {
   render() {
     return (
-      <sap.m.Page title='Hello World 1'>
+      <sap.m.Page title='Page 1'>
         <sap.m.Button
           onPress={() => this.context.router.push('/page2')}
           type={sap.m.ButtonType.Emphasized}

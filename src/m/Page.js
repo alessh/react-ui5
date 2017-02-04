@@ -46,4 +46,4 @@ Page.defaultProps = {
   children: null,
 }
 
-export {Page}
+export default Page

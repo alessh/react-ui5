@@ -15,9 +15,10 @@ const List = (props) => {
     </div>
   )
 }
+
 List.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node
 }
 
-export {List}
+export default List

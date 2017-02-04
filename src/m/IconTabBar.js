@@ -43,4 +43,4 @@ IconTabBar.defaultProps = {
   select: () => {}
 }
 
-export {IconTabBar}
+export default IconTabBar

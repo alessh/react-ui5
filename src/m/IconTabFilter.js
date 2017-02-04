@@ -67,4 +67,4 @@ IconTabFilter.defaultProps = {
   upperCase: false
 }
 
-export {IconTabFilter}
+export default IconTabFilter

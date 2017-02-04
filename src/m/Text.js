@@ -46,4 +46,4 @@ Text.defaultProps = {
   textAlign: null
 }
 
-export {Text}
+export default Text

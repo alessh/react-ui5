@@ -22,7 +22,7 @@ export default class Page2 extends React.Component {
   render() {
     return ( 
        <sap.m.Page
-        title='Hello World 2'
+        title='Page 2'
         showNavButton={true}
         navButtonPress={() => this.context.router.push('/')}
       >

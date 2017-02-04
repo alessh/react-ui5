@@ -1,4 +1,4 @@
-const TitleLevel = {
+class TitleLevel {
 
 	/**
 	 * The level of the title is choosen by the control rendering the title.
@@ -44,4 +44,4 @@ const TitleLevel = {
 
 }
 
-export { TitleLevel }
+export default TitleLevel

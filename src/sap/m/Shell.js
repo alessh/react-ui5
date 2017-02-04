@@ -1,10 +1,5 @@
 import React, {PropTypes} from 'react'
 
-import '../../m.belize.css';
-import '../../ui.core.belize.css';
-import '../../ui.layout.belize.css';
-import '../../font.belize.css';
-
 const Shell = (props) => (
   <div id='html' className="sap-tablet  sap-desktop sap-combi sapUiTheme-sap_bluecrystal sapUiMedia-Std-Desktop sapUiMedia-StdExt-Desktop">
   <div id='app-root' className="sapUiBody" style={{height: '100%'}} >

@@ -12,6 +12,11 @@ import { ListItem } from './sap/m/ListItem'
 
 import { TitleLevel } from './sap/ui/core/TitleLevel'
 
+import './m.belize.css';
+import './ui.core.belize.css';
+import './ui.layout.belize.css';
+import './font.belize.css';
+
 exports.m = {
 	App: App,
 	Button: Button,

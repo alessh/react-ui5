@@ -33,7 +33,7 @@ const Page = (props) => (
 
 Page.propTypes = {
   title: PropTypes.string,
-  titleLevel: PropTypes.instanceOf(sap.ui.core.TitleLevel),
+  //titleLevel: PropTypes.instanceOf(sap.ui.core.TitleLevel),
   showNavButton: PropTypes.bool,
   children: PropTypes.node,
   navButtonPress: PropTypes.func,
@@ -41,7 +41,7 @@ Page.propTypes = {
 
 Page.defaultProps = {
   title: null,
-  titleLevel: sap.ui.core.TitleLevel.Auto,
+  //titleLevel: sap.ui.core.TitleLevel.Auto,
   showNavButton: false,
   children: null,
 }

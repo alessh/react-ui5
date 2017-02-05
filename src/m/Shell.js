@@ -1,21 +1,32 @@
 import React, {PropTypes} from 'react'
+import ReactDOM from 'react-dom'
 
-const Shell = (props) => (
-  <div id='html' className="sap-tablet  sap-desktop sap-combi sapUiTheme-sap_bluecrystal sapUiMedia-Std-Desktop sapUiMedia-StdExt-Desktop">
-  <div id='app-root' className="sapUiBody" style={{height: '100%'}} >
-    <div className='sapMShell sapMShellAppWidthLimited sapMShellGlobalOuterBackground'>
-      <div className='sapMShellBG sapUiGlobalBackgroundImage sapUiGlobalBackgroundImageForce' />
-      <div className='sapMShellBrandingBar' />
+class Shell extends React.Component {
+  componentWillMount() {
+    document.documentElement.className += 'sap-tablet sap-desktop sap-combi sapUiMedia-Std-Tablet sapUiMedia-StdExt-Tablet sapUiTheme-sap_belize'
+    document.documentElement.style.height = "100%";
+    document.body.classList.add('sapUiBody','sapUiSizeCompact')
+    document.body.style.height = "100%";
+    ReactDOM.findDOMNode(this);  
+  }
 
-      <div className='sapMShellCentralBox'>
-        <section className='sapMShellContent sapMShellGlobalInnerBackground'>
-          {props.children}
-        </section>
+  render() {
+    return (
+      <div id="Shell" className='sapMShell sapMShellAppWidthLimited sapMShellGlobalOuterBackground'>
+        <div className='sapMShellBG sapUiGlobalBackgroundImage sapUiGlobalBackgroundImageForce' />
+        <div className='sapMShellBrandingBar' />
+
+        <div className='sapMShellCentralBox'>
+          <section className='sapMShellContent sapMShellGlobalInnerBackground'>
+            {this.props.children}
+          </section>
+        </div>
       </div>
-    </div>
-  </div>
-  </div>
-)
+    )
+  }
+
+
+}
 
 Shell.propTypes = {
   children: PropTypes.node

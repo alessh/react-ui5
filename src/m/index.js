@@ -9,6 +9,10 @@ import Text from './Text'
 import ButtonType from './ButtonType'
 import List from './List'
 import ListItem from './ListItem'
+import SplitContainer from './SplitContainer'
+import TabContainer from './TabContainer'
+import TabContainerItem from './TabContainerItem'
+import TabStrip from './TabStrip'
 
 export default {
 	App: App,
@@ -21,5 +25,9 @@ export default {
 	Text: Text,
 	ButtonType: ButtonType,
 	List: List,
-	ListItem: ListItem
+	ListItem: ListItem,
+	SplitContainer: SplitContainer,
+	TabContainer: TabContainer,
+	TabContainerItem: TabContainerItem,
+	TabStrip: TabStrip
 }

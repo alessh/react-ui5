@@ -59,6 +59,7 @@ IconTabFilter.propTypes = {
   text: PropTypes.string,
   upperCase: PropTypes.bool
 }
+
 IconTabFilter.defaultProps = {
   count: null,
   icon: null,

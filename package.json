@@ -1,6 +1,6 @@
 {
   "name": "react-ui5",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A react based implementation of the SAP OpenUI5 framework",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",

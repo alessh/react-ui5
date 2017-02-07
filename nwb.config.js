@@ -5,5 +5,10 @@ module.exports = {
   npm: {
     esModules: true,
     umd: false
+  },
+  webpack: {
+    html: {
+      template: 'public/index.html'
+    }
   }
 }

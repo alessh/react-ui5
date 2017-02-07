@@ -2,12 +2,17 @@ import React, {PropTypes} from 'react'
 import ReactDOM from 'react-dom'
 
 class Shell extends React.Component {
-  componentWillMount() {
+  
+  componentDidMount() {
     document.documentElement.className += 'sap-tablet sap-desktop sap-combi sapUiMedia-Std-Tablet sapUiMedia-StdExt-Tablet sapUiTheme-sap_belize'
-    document.documentElement.style.height = "100%";
+
     document.body.classList.add('sapUiBody','sapUiSizeCompact')
-    document.body.style.height = "100%";
-    ReactDOM.findDOMNode(this);  
+
+    let self = ReactDOM.findDOMNode(this)
+    do {
+      self.style.height = "100%";
+    } while((self = self.parentElement))
+
   }
 
   render() {
@@ -24,7 +29,6 @@ class Shell extends React.Component {
       </div>
     )
   }
-
 
 }
 

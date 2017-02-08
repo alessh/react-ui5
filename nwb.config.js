@@ -8,7 +8,7 @@ module.exports = {
   },
   webpack: {
     html: {
-      template: 'public/index.html'
+      template: 'template/index.html'
     }
   }
 }

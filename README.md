@@ -17,10 +17,15 @@
 
 A react based implementation of the SAP OpenUI5 framework (https://openui5.hana.ondemand.com).
 
+Installation
 ```javascript
 npm install react-ui5 --save
 ```
-
+Use
+```javascript
+import sap from 'react-ui5'
+```
+Home Page (index.html)
 ```html
 <!DOCTYPE html>
 <html>
@@ -35,11 +40,12 @@ npm install react-ui5 --save
   </body>
 </html>
 ```
-
+App.js
 ```
-// App.js
 import React from 'react'
 import {render} from 'react-dom'
+
+import sap from 'react-ui5'
 
 render((
   <sap.m.Shell>

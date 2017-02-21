@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/react-ui5.png)](https://nodei.co/npm/react-ui5/)
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
+[build-badge]: https://travis-ci.org/alessh/react-ui5.svg?branch=master
 [build]: https://travis-ci.org/alessh/react-ui5
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square

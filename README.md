@@ -62,7 +62,7 @@ class App extends Component {
 export default App;
 
 ```
-
+###Demo
 ![Sample](sample.gif)
 
 Supported Components
@@ -76,12 +76,13 @@ Supported Components
 | SplitContainer |  | 30% |
 | TabSplit |  | 20% |
 
-```
+###SplitContainer
+```html
 <SplitContainer />
 ```
 ![Master Detail Page](page3.png)
-
-```
+###TabContainer
+```html
 <TabContainer />
 ```
 ![Table Container](page4.png)

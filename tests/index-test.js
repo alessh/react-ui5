@@ -16,7 +16,7 @@ describe('Page', () => {
   })
 
   it('displays a welcome message', () => {
-    render(<sap.m.Page>Welcome to Page component</sap.m.Page>, node, () => {
+    render(<sap.m.Shell><sap.m.Page>Welcome to Page component</sap.m.Page></sap.m.Shell>, node, () => {
       expect(node.innerHTML).toContain('Welcome to Page component')
     })
   })

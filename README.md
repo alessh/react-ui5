@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <sap.m.Shell>
         <sap.m.Page title="Page Demo" >
-          <h1>SAP Page</h1>
+          <sap.m.Button>To Page 2</sap.m.Button>
         </sap.m.Page>
 
       </sap.m.Shell>
@@ -60,7 +60,6 @@ class App extends Component {
 }
 
 export default App;
-
 ```
 ###Demo
 ![Sample](sample.gif)

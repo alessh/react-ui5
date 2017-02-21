@@ -1,8 +1,6 @@
 import React, {PropTypes} from 'react'
 import IconButton from './internal/IconButton'
 
-import sap from '../../';
-
 const Page = (props) => (
   <div className="sapMNavItem sapMPage sapMPageBgStandard sapMPageBusyCoversAll sapMPageWithHeader">
     <header className="sapMBar sapMBar-CTX sapMContent-CTX sapMHeader-CTX sapMIBar sapMIBar-CTX sapMPageHeader">

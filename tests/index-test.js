@@ -2,9 +2,9 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from 'src/'
+import sap from 'src/'
 
-describe('Component', () => {
+describe('Page', () => {
   let node
 
   beforeEach(() => {
@@ -16,8 +16,8 @@ describe('Component', () => {
   })
 
   it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
+    render(<sap.m.Page>Welcome to Page component</sap.m.Page>, node, () => {
+      expect(node.innerHTML).toContain('Welcome to Page component')
     })
   })
 })

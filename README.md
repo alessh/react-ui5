@@ -65,7 +65,7 @@ export default App;
 ###Demo
 ![Sample](sample.gif)
 
-Supported Components
+###Supported Components
 
 | component | methods | progress |
 | ------- | ---------------- | ------ |

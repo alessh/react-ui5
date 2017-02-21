@@ -42,20 +42,25 @@ Home Page (index.html)
 ```
 App.js
 ```
-import React from 'react'
-import {render} from 'react-dom'
+import React, { Component } from 'react';
 
 import sap from 'react-ui5'
 
-render((
-  <sap.m.Shell>
-    <sap.m.Page title='Page 1'>
-      <sap.m.Button >
-          To page 2
-      </sap.m.Button>
-    </sap.m.Page>
-  <sap.m.Shell>
-), document.getElementById('app'))
+class App extends Component {
+  render() {
+    return (
+      <sap.m.Shell>
+        <sap.m.Page title="Page Demo" >
+          <h1>SAP Page</h1>
+        </sap.m.Page>
+
+      </sap.m.Shell>
+    );
+  }
+}
+
+export default App;
+
 ```
 
 ![Sample](sample.gif)

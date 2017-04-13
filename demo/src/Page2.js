@@ -24,7 +24,7 @@ export default class Page2 extends React.Component {
        <sap.m.Page
         title='Page 2'
         showNavButton={true}
-        navButtonPress={() => this.context.router.push('/')}
+        navButtonPress={() => this.props.router.push('/')}
       >
         <sap.m.IconTabBar
           selectedKey={this.state.show}
@@ -60,7 +60,7 @@ export default class Page2 extends React.Component {
         </sap.m.IconTabBar>
         <sap.m.Text text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus dui ac tellus tincidunt maximus. Etiam auctor nisl sed magna volutpat finibus. Nunc risus lacus, dictum ac ipsum et, tristique sodales quam. Praesent rutrum ipsum est, quis aliquet mauris iaculis non. Suspendisse eu magna volutpat libero congue ornare tempus a mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur enim at urna mollis fringilla. Fusce fermentum porta euismod. Aenean nunc ex, viverra id augue ultricies, fermentum ultrices nulla. Curabitur lobortis molestie velit id tristique.' />
         <sap.m.Button
-          onPress={() => this.context.router.push('/page1')}
+          onPress={() => this.props.router.push('/page1')}
           type={sap.m.ButtonType.Emphasized}
         >
           To page 1

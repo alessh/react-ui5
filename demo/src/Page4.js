@@ -15,7 +15,7 @@ class Page4 extends React.Component {
               style={{height: '100%'}}
             >
               <sap.m.Button
-                onPress={() => this.context.router.push('/page1')}
+                onPress={() => this.props.router.push('/page1')}
                 type={sap.m.ButtonType.Emphasized}
               >
                 To page 1
@@ -28,7 +28,24 @@ class Page4 extends React.Component {
               title='Table Container'
               style={{height: '100%'}}
             >
-                <sap.m.TabContainer />
+                <sap.m.TabContainer currentIndex={1}>
+                  <sap.m.TabContainerItem header="to page1">
+                    <sap.m.Button
+                      onPress={() => this.props.router.push('/page1')}
+                      type={sap.m.ButtonType.Emphasized}
+                    >
+                      To page 1
+                    </sap.m.Button>
+                  </sap.m.TabContainerItem>
+                  <sap.m.TabContainerItem header="to page2">
+                    <sap.m.Button
+                      onPress={() => this.props.router.push('/page2')}
+                      type={sap.m.ButtonType.Emphasized}
+                    >
+                      To page 2
+                    </sap.m.Button>
+                  </sap.m.TabContainerItem>
+                </sap.m.TabContainer>
               
             </sap.m.Page>
           }

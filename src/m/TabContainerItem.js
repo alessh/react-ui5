@@ -15,7 +15,7 @@ class TabContainerItem extends React.Component {
 }
 
 TabContainerItem.propTypes = {
-
+  headers : PropTypes.arrayOf(PropTypes.string)
 }
 
 TabContainerItem.defaultProps = {

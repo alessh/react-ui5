@@ -15,7 +15,7 @@ class Page3 extends React.Component {
             style={{height: '100%'}}
           >
             <sap.m.Button
-              onPress={() => this.context.router.push('/page1')}
+              onPress={() => this.props.router.push('/page1')}
               type={sap.m.ButtonType.Emphasized}
             >
               To page 1
@@ -29,7 +29,7 @@ class Page3 extends React.Component {
             style={{height: '100%'}}
           >
               <sap.m.Button
-              onPress={() => this.context.router.push('/page1')}
+              onPress={() => this.props.router.push('/page1')}
               type={sap.m.ButtonType.Emphasized}
             >
               To page 1
